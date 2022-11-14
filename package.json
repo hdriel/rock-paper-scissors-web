@@ -1,0 +1,26 @@
+{
+  "name": "rock-paper-scissors-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/scss/styles.scss:styles/css/styles.css",
+    "sass:watch": "sass --watch styles/scss/styles.scss:styles/css/styles.css",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdriel/rock-paper-scissors-web.git"
+  },
+  "author": "hdrielb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdriel/rock-paper-scissors-web/issues"
+  },
+  "homepage": "https://github.com/hdriel/rock-paper-scissors-web#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1"
+  }
+}

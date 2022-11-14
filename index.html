@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles/css/styles.css" />
+    <script src="scripts/main.js"></script>
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="score-container">
+      <p>Score: <span id="score">A</span>/<span id="total-games">B</span></p>
+    </div>
+    <div class="reset-container">
+      <button id="reset" onclick="resetGame(event)">RESET</button>
+    </div>
+    <div class="container">
+      <div class="area computer-area">
+        <div class="action action-computer" id="computer-player-image"></div>
+      </div>
+      <div class="area status-area">
+        <div id="winner-container" class="status-content">
+          <p>Winner: <span id="winner">XYZ</span></p>
+          <button id="play">PLAY AGAIN</button>
+        </div>
+        <div id="idle-container" class="status-content">
+          <p>Choose your weapon</p>
+        </div>
+      </div>
+      <div class="area player-area">
+        <div
+          id="rock"
+          class="action action-rock"
+          onclick="play(ITEMS.ROCK)"
+        ></div>
+        <div
+          id="paper"
+          class="action action-paper"
+          onclick="play(ITEMS.PAPER)"
+        ></div>
+        <div
+          id="scissors"
+          class="action action-scissors"
+          onclick="play(ITEMS.SCISSORS)"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

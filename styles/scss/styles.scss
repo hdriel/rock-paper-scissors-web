@@ -1,0 +1,118 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  position: relative;
+  height: 92vh;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: unset;
+  background: transparent;
+  color: #3d6229;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #3d6229;
+
+  &:hover {
+    background: rgba(61, 98, 41, 0.3);
+  }
+}
+
+.score-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+  font-size: 2em;
+
+  p {
+    padding: 10px 20px;
+  }
+}
+
+.reset-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 2em;
+
+  & > * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area {
+    .action {
+      cursor: pointer;
+      background-color: rgba(61, 98, 41, 0.3);
+      border-radius: 100%;
+      padding: 25px;
+      width: 150px;
+      height: 150px;
+      background-size: 120px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &.action-paper {
+        background-image: url("../../assets/paper.png");
+      }
+      &.action-rock {
+        background-image: url("../../assets/rock.png");
+      }
+      &.action-scissors {
+        background-image: url("../../assets/scissors.png");
+      }
+      &.action-computer {
+        background-image: url("../../assets/question.png");
+      }
+
+      &:not(#computer-player-image) {
+        opacity: 0.25;
+      }
+
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+.player-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.status-area {
+  font-size: 2em;
+
+  .status-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
