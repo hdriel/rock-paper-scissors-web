@@ -74,6 +74,9 @@ button {
       background-repeat: no-repeat;
       background-position: center;
 
+      &.action-computer {
+        background-image: url("../../assets/question.png");
+      }
       &.action-paper {
         background-image: url("../../assets/paper.png");
       }
@@ -83,15 +86,17 @@ button {
       &.action-scissors {
         background-image: url("../../assets/scissors.png");
       }
-      &.action-computer {
-        background-image: url("../../assets/question.png");
+
+      &.active {
+        opacity: 1 !important;
+        border: 2px solid #3d6229;
       }
 
       &:not(#computer-player-image) {
         opacity: 0.25;
       }
 
-      &:hover {
+      &:not(.disabled):hover {
         opacity: 1 !important;
       }
     }
@@ -107,6 +112,7 @@ button {
 
 .status-area {
   font-size: 2em;
+  height: 150px;
 
   .status-content {
     display: flex;
@@ -114,5 +120,18 @@ button {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
