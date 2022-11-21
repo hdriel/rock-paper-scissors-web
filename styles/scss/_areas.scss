@@ -1,0 +1,42 @@
+.player-area {
+  @include flex-centered-alinged-items;
+  gap: 100px;
+}
+
+.status-area {
+  font-size: 2em;
+  height: 150px;
+}
+
+.status-content {
+  @include flex-centered-alinged-items;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.area {
+  .action {
+    cursor: pointer;
+    background-color: $dark-green;
+    border-radius: 100%;
+    padding: 25px;
+    width: 150px;
+    height: 150px;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.active {
+      opacity: 1 !important;
+      border: 2px solid $green;
+    }
+
+    &:not(#computer-player-image) {
+      opacity: 0.25;
+    }
+
+    &:not(.disabled):hover {
+      opacity: 1 !important;
+    }
+  }
+}

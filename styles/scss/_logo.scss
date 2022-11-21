@@ -1,0 +1,19 @@
+.action-computer {
+  background-image: url("../../assets/question.png");
+}
+
+.action-paper {
+  background-image: url("../../assets/paper.png");
+}
+
+.action-rock {
+  background-image: url("../../assets/rock.png");
+}
+
+.action-scissors {
+  background-image: url("../../assets/scissors.png");
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}

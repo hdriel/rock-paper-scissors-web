@@ -1,0 +1,21 @@
+.score-container {
+  @include container-on-top-page;
+  left: 0;
+}
+
+.reset-container {
+  @include container-on-top-page;
+  right: 0;
+}
+
+.container {
+  @include flex-centered-alinged-items;
+  flex-direction: column;
+  height: 100%;
+  gap: 2em;
+
+  & > * {
+    @include flex-centered-alinged-items;
+    width: 100%;
+  }
+}
