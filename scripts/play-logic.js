@@ -1,3 +1,5 @@
+const _sleep = (ms) => new Promise((res) => setTimeout(res, ms));
+
 async function play(item) {
   if (inPlaying) return;
 
@@ -24,7 +26,7 @@ async function play(item) {
     { player: 1, choose: playerChoose },
     { player: 2, choose: computerChoose }
   );
-  
+
   const winnerContainerElement = document.getElementById(
     DOM_SELECTORS_IDS.WINNER_CONTAINER
   );

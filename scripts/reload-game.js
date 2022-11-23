@@ -1,5 +1,3 @@
-const _sleep = (ms) => new Promise((res) => setTimeout(res, ms));
-
 function resetGame() {
   score.resetScore();
   totalGames = 0;
