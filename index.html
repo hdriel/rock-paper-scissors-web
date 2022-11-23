@@ -8,11 +8,15 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="styles/css/styles.css" />
-    <script src="scripts/score-calc.js"></script>
+
+    <script src="scripts/consts.js"></script>
+    <script src="scripts/ComputerOptionElement.js"></script>
+    <script src="scripts/PlayerOptionElement.js"></script>
+    <script src="scripts/EventElement.js"></script>
+    <script src="scripts/NumberElement.js"></script>
+    <script src="scripts/TextElement.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/buttons-actions.js"></script>
-    <script src="scripts/play-logic.js"></script>
-    <script src="scripts/reload-game.js"></script>
+
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
@@ -20,7 +24,7 @@
       <p>Score: <span id="score">A</span>/<span id="total-games">B</span></p>
     </div>
     <div class="reset-container">
-      <button id="reset" onclick="resetGame(event)">RESET</button>
+      <button id="reset" onclick="resetGame(true)">RESET</button>
     </div>
     <div class="container">
       <div class="area computer-area">
@@ -29,7 +33,7 @@
       <div class="area status-area">
         <div id="winner-container" class="status-content">
           <p>Winner: <span id="winner">XYZ</span></p>
-          <button id="play" onclick="playAgain()">PLAY AGAIN</button>
+          <button id="play" onclick="resetGame(false)">PLAY AGAIN</button>
         </div>
         <div id="idle-container" class="status-content">
           <p>Choose your weapon</p>
