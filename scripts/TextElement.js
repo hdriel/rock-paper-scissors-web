@@ -1,5 +1,5 @@
-function TextElement(elementId, onChange = undefined) {
-  let value = 0;
+function TextElement(elementId) {
+  let value = "";
 
   function updateValue(newValue) {
     value = newValue;
@@ -8,13 +8,7 @@ function TextElement(elementId, onChange = undefined) {
 
   function render(value) {
     const element = document.getElementById(elementId);
-    if (element) {
-      if (typeof onChange === "function") {
-        onChange(element);
-      } else {
-        element.innerText = `${value}`;
-      }
-    }
+    if (element) element.innerText = `${value}`;
   }
 
   return {
