@@ -5,6 +5,8 @@ For the nostalgic game [Rock Paper Scissors](https://he.wikipedia.org/wiki/%D7%9
 <br>
 Try it out with [Live Demo](https://hdriel.github.io/rock-paper-scissors-web/)
 
+## Note!! it's a part from my: `Just Like That Bootcamp!` <br> So, I don't improve my code here! <br> to allow my students getting access to original project as they saw
+
 ## How to play
 you as a player choose one of three options: Rock, Paper and Scissors images buttons
 and then, the computer choose a random as well in 2 seconds while display rotate/spin animation
