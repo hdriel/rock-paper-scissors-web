@@ -35,12 +35,15 @@ After dividing into parts
 
 The final Result is:
 ![planning-result1](assets/screenshot-app2.png)
+
+<hr>
+
 ![planning-result2](assets/screenshot-app.png)
 
 
 ## Tech and Skills
-Development styles with [Sass](https://sass-lang.com/) by separated into component styles <br>
-Using made self animation for rotate computer question choose for 2 seconds
-Write scripts with my new approach to Keep project in [KISS](https://he.wikipedia.org/wiki/KISS) principle<br>
-For highest for readability and easy maintenance, like each button control on the logic and UI updates
-you can review my code starting from `scripts/main.js` file
+* Development styles with [Sass](https://sass-lang.com/) by separated into component styles <br>
+* Using made self **animation** for rotate computer question choose for 2 seconds
+* Write scripts with my **new approach** to Keep project in [KISS](https://he.wikipedia.org/wiki/KISS) principle<br>
+  - For highest for readability and easy maintenance, like each button control on the logic and UI updates
+* you can review my code starting from `scripts/main.js` file
