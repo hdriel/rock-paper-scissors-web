@@ -22,7 +22,7 @@ First getting the updated css styles and then run you project
 2. run `npm run sass`
 3. open file `index.html` in your Chrome browser
 
-Or try to play here in [Live Demo](//#)
+Or try to play here in [Live Demo](https://hdriel.github.io/rock-paper-scissors-web/)
 
 ## Planning
 This project wes planed before starting develop and the layout wes: 
