@@ -1,0 +1,131 @@
+body {
+  position: relative;
+  height: 92vh;
+  font-family: cursive;
+}
+
+p {
+  margin: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.score-container {
+  position: absolute;
+  top: 0;
+  margin: 1em;
+  font-size: 2em;
+  left: 0;
+}
+
+.reset-container {
+  position: absolute;
+  top: 0;
+  margin: 1em;
+  font-size: 2em;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 2em;
+}
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  border: unset;
+  background: transparent;
+  color: #3d6229;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #3d6229;
+}
+button:hover {
+  background: rgba(61, 98, 41, 0.3);
+}
+
+.scoreText {
+  padding: 10px 20px;
+}
+
+.action-computer {
+  background-image: url("../../assets/question.png");
+}
+
+.action-paper {
+  background-image: url("../../assets/paper.png");
+}
+
+.action-rock {
+  background-image: url("../../assets/rock.png");
+}
+
+.action-scissors {
+  background-image: url("../../assets/scissors.png");
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+.player-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.status-area {
+  font-size: 2em;
+  height: 150px;
+}
+
+.status-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.area .action {
+  cursor: pointer;
+  background-color: rgba(61, 98, 41, 0.3);
+  border-radius: 100%;
+  padding: 25px;
+  width: 150px;
+  height: 150px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.area .action.active {
+  opacity: 1 !important;
+  border: 2px solid #3d6229;
+}
+.area .action:not(#computer-player-image) {
+  opacity: 0.25;
+}
+.area .action:not(.disabled):hover {
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
