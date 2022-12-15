@@ -1,7 +1,9 @@
 # Rock Paper and Scissors web game
 
 A simple web game, develop by HTML, CSS (SCSS), JS <br/>
-For the nostalgic game [Rock Paper Scissors](https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A0%D7%99%D7%99%D7%A8_%D7%95%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%99%D7%9D)
+For the nostalgic game [Rock Paper Scissors](https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A0%D7%99%D7%99%D7%A8_%D7%95%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%99%D7%9D) <br>
+<br>
+Try it out with [Live Demo](https://hdriel.github.io/rock-paper-scissors-web/)
 
 ## How to play
 you as a player choose one of three options: Rock, Paper and Scissors images buttons
@@ -24,7 +26,7 @@ First getting the updated css styles and then run you project
 
 Or try to play here in [Live Demo](https://hdriel.github.io/rock-paper-scissors-web/)
 
-## Planning
+## Planning and Output
 This project wes planed before starting develop and the layout wes: 
 ![planning](assets/screenshot.png)
 
@@ -38,5 +40,7 @@ The final Result is:
 
 ## Tech and Skills
 Development styles with [Sass](https://sass-lang.com/) by separated into component styles <br>
-my new approach to Keep project in [KISS](https://he.wikipedia.org/wiki/KISS) principle for highest for readability and easy maintenance
-Each button control on the logic and UI updates
+Using made self animation for rotate computer question choose for 2 seconds
+Write scripts with my new approach to Keep project in [KISS](https://he.wikipedia.org/wiki/KISS) principle<br>
+For highest for readability and easy maintenance, like each button control on the logic and UI updates
+you can review my code starting from `scripts/main.js` file
