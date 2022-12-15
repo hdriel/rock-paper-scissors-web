@@ -1,9 +1,10 @@
 {
   "name": "rock-paper-scissors-web",
-  "version": "1.0.0",
+  "version": "3.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d .",
     "sass": "sass styles/scss/styles.scss:styles/css/styles.css",
     "sass:watch": "sass --watch styles/scss/styles.scss:styles/css/styles.css",
     "start": "lite-server"
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/hdriel/rock-paper-scissors-web#readme",
   "devDependencies": {
+    "gh-pages": "^3.2.0",
     "lite-server": "^2.6.1",
     "prettier": "^2.7.1",
     "sass": "^1.56.1"
