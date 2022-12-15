@@ -1,4 +1,4 @@
-# Rock, Paper and Scissors web game
+# Rock Paper and Scissors web game
 
 A simple web game, develop by HTML, CSS (SCSS), JS <br/>
 For the nostalgic game [Rock Paper Scissors](https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A0%D7%99%D7%99%D7%A8_%D7%95%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%99%D7%9D)
